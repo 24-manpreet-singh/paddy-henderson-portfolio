@@ -1,0 +1,44 @@
+import { useState, useEffect } from "react";
+import { MENU_DATA } from '@/components/molecules/menubar/menu-item-data'
+import { useAnimate, stagger, motion } from "framer-motion";
+
+export default function MobileMenuWrapper() {
+    const [open, setOpen] = useState(false);
+    const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
+
+    // the stagger effect
+    const staggerList = stagger(0.1, { startDelay: 0.25 });
+
+    type MenuItem = {
+        icon: string;
+        label: string;
+    };
+
+    const menuItems: MenuItem[] = [
+        { icon: "fas fa-user", label: 'About 1213' },
+        { icon: "fas fa-file-alt", label: 'Resume 234' },
+        { icon: "fas fa-briefcase", label: 'Works' },
+    ];
+
+
+    return (
+        <div className="relative">
+            {/* Menu Section */}
+            {true && (
+                <div className="absolute top-0 left-0 w-full bg-white z-50 p-4">
+                    <ul>
+                        {MENU_DATA.map((item, index) => (
+                            <li key={index} className="flex items-center mb-2 text-black capitalize ">
+                                <span className="mr-2">
+                                    <i className={item.icon}></i>
+                                </span>
+                                {item.label}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
+
+        </div>
+    );
+}
