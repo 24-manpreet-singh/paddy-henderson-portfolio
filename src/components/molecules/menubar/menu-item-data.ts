@@ -1,17 +1,17 @@
 export const MENU_DATA = [
   {
-    label: "about",
+    label: "About Us",
     href: "/about-us",
     icon: "fa-light fa-address-card",
   },
   {
-    label: "Resume",
-    href: "/resume",
+    label: "Services",
+    href: "/service",
     icon: "fa-light fa-file-user",
   },
   {
-    label: "Works",
-    href: "/portfolio",
+    label: "Blog",
+    href: "/blog",
     icon: "fa-light fa-briefcase",
   },
   // {
@@ -20,7 +20,7 @@ export const MENU_DATA = [
   //   icon: "fa-light fa-newspaper",
   // },
   {
-    label: "contact",
+    label: "Contact Us",
     href: "/contact",
     icon: "fa-light fa-address-book",
   },

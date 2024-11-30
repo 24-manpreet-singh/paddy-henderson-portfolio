@@ -6,7 +6,8 @@ import Link from 'next/link'
 import LINKEDIN_IMAGE from '@/assets/images/social/linkedin.svg'
 import INSTA_IMAGE from '@/assets/images/social/insta.svg'
 import FB_IMAGE from '@/assets/images/social/facebook.svg'
-import { memo } from 'react'
+import { memo, useState } from 'react'
+import MobileMenuWrapper from '@/components/organisam/mobile-menu'
 
 
 type HeaderWrapperProps = {
@@ -15,6 +16,7 @@ type HeaderWrapperProps = {
 
 const HeaderWrapper = (props: HeaderWrapperProps) => {
     const { onThemeChange } = props
+    const [openMenu, setOpenMenu] = useState<boolean>(false)
     // const context = useContext(Context);
     // const [openMenu, setOpenMenu] = useState<boolean>(false)
     // if (!context) {
@@ -37,6 +39,11 @@ const HeaderWrapper = (props: HeaderWrapperProps) => {
     // const onOpenMenu = () => {
     //     setOpenMenu(!openMenu)
     // }
+
+    const onOpenMenu = () => {
+        const flag = !openMenu;
+        setOpenMenu(flag)
+    }
 
     return (
         <>
@@ -104,11 +111,15 @@ const HeaderWrapper = (props: HeaderWrapperProps) => {
                             </li>
                         </ul>
                     </div>
-
+                    {openMenu &&
+                        <div className="absolute  w-72 min-h-[180px] list-main-wrapper rounded bg-white overflow-hidden lg:hidden top-14 right-0">
+                            <MobileMenuWrapper onOpenMenu={onOpenMenu} />
+                        </div>
+                    }
                     <div className="menu-extras flex items-center space-x-4">
                         {/* Toggle menu */}
                         <div className="menu-item">
-                            <a className="navbar-toggle" id="isToggle">
+                            <a className="navbar-toggle" id="isToggle" onClick={() => onOpenMenu()} >
                                 <div className="lines">
                                     <span />
                                     <span />
@@ -116,6 +127,9 @@ const HeaderWrapper = (props: HeaderWrapperProps) => {
                                 </div>
                             </a>
                         </div>
+
+
+
 
                         {/* Social Icons */}
                         <ul className="buy-button list-none mb-0 flex space-x-4">

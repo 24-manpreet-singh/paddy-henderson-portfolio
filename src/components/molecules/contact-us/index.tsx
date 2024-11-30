@@ -16,7 +16,7 @@ const ContactUS = () => {
                     <div className="lg:ms-5">
                         <div className="bg-white dark:bg-slate-900 rounded-xl shadow dark:shadow-gray-700 p-6">
                             <h3 className="mb-6 text-2xl leading-normal font-medium">Get in touch !</h3>
-                            <form method="post" name="myForm" id="myForm" >
+                            <form method="get" name="myForm" id="myForm" >
                                 <p className="mb-0" id="error-msg" />
                                 <div id="simple-msg" />
                                 <div className="grid grid-cols-1">
@@ -38,7 +38,7 @@ const ContactUS = () => {
                                         <textarea name="comments" id="comments" className="form-input w-full py-2 px-3 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2 textarea h-28" placeholder="Message :" defaultValue={""} />
                                     </div>
                                 </div>
-                                <button type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-normal tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white rounded-xl">Send Message</button>
+                                <button type="button" id="submit" name="send" className="py-2 px-5 inline-block font-normal tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white rounded-xl">Send Message</button>
                             </form>
                         </div>
                     </div>
