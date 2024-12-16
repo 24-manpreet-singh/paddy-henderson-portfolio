@@ -23,7 +23,7 @@ const BlogList = (props: BlogListProps) => {
             <div className={`container relative ${title ? 'md:mt-24 mt-16' : "md:mt-0 mt-8"}`}>
                 {(title && description) && <div className="grid grid-cols-1 pb-6 text-center">
                     <h3 className="mb-6 md:text-2xl text-xl font-medium">{title}</h3>
-                    <p className="text-slate-400 dark:text-white/60 max-w-xl mx-auto">
+                    <p className="text-slate-400  max-w-xl mx-auto">
                         {description}
                     </p>
                 </div>
@@ -35,7 +35,7 @@ const BlogList = (props: BlogListProps) => {
                     {BLOG_DATA.map((item, index: number) => {
                         return (
                             <div className="group" key={index}>
-                                <div className="relative overflow-hidden rounded-xl shadow-md dark:shadow-gray-700">
+                                <div className="relative overflow-hidden rounded-xl shadow-md ">
                                     <div className='h-72'>
                                         <ImageWrapper
                                             src={item.imageSrc}
@@ -58,7 +58,7 @@ const BlogList = (props: BlogListProps) => {
                                 </div>
                                 <div className="p-4">
                                     <Link href={`blog/detail/${item.id}`} className="title text-lg font-medium hover:text-orange-500 duration-500">{item.title}</Link>
-                                    <p className="text-slate-400 dark:text-white/60 mt-3">
+                                    <p className="text-slate-400  mt-3">
                                         {truncateText(item.description)}
                                     </p>
                                     <div className="mt-3">

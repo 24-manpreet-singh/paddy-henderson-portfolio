@@ -56,12 +56,12 @@ const HeaderWrapper = (props: HeaderWrapperProps) => {
                         <ImageWrapper
                             src={BLACK_LOGO}
                             alt={"dark logo"}
-                            className='-5 inline-block dark:hidden'
+                            className='-5 inline-block '
                         />
                         <ImageWrapper
                             src={WHITE_LOGO}
                             alt={"white logo"}
-                            className='-h-5 hidden dark:inline-block'
+                            className='-h-5 hidden '
                         />
                     </Link>
 

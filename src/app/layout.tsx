@@ -39,7 +39,7 @@ export default function RootLayout({
 
       </Head>
 
-      <body className={`font-poppins text-[15px] text-slate-900 dark:text-white dark:bg-slate-900 ${poppins.className}`}>
+      <body className={`font-poppins text-[15px] text-slate-900  ${poppins.className}`}>
 
         {children}
 

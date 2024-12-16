@@ -7,10 +7,10 @@ const WhatWeDo = () => {
     return (
         <React.Fragment>
 
-            <div className="container relative md:mt-24 mt-16">
+            <div className="container relative md:mt-24 mt-16 ">
                 <div className="grid grid-cols-1 pb-6 text-center">
                     <h3 className="mb-6 md:text-2xl text-xl font-medium">What I do?</h3>
-                    <p className="text-slate-400 dark:text-white/60 max-w-xl mx-auto">
+                    <p className="text-slate-400  max-w-xl mx-auto">
                         Crafting compelling stories with precision, passion, and integrity—bringing you insightful journalism, engaging features, and well-researched content that informs, entertains, and inspires.
                     </p>
                 </div>
@@ -30,7 +30,7 @@ const WhatWeDo = () => {
                                 </div>
                                 <div className="mt-6">
                                     <Link href="about-us" className="text-lg font-medium duration-500 hover:text-orange-500">{item.title}</Link>
-                                    <p className="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
+                                    <p className="text-slate-400  text-[15px] duration-500 mt-3">
                                         {item.description}
                                     </p>
                                 </div>

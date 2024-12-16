@@ -76,14 +76,7 @@ const Service = () => {
                                                 />
                                             </div>
                                         </div>
-                                        {/* <div className="content duration-700 ease-in-out">
-                                            <div className="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
-                                                <Link href="blog" className="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
-                                                    {item.title}
-                                                </Link>
-                                                <p className="text-slate-400 dark:text-white/60 mb-0">{item.shortDescription}</p>
-                                            </div>
-                                        </div> */}
+
                                         <div className="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1" />
                                     </div>
                                 </div>
@@ -94,7 +87,7 @@ const Service = () => {
                 </div>{/*end container*/}
                 <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 text-center">
-                        <span className="text-slate-400 dark:text-white/60 mb-4">Get in Touch With Me</span>
+                        <span className="text-slate-400  mb-4">Get in Touch With Me</span>
                         <h3 className="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Contact me for writing, journalism, and more</h3>
                         <div className="mt-6">
                             <Link href="contact" className="py-2 px-5 inline-flex items-center font-medium tracking-wide border align-middle duration-500 text-[15px] text-center bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white rounded-xl"><i data-feather="phone" className="h-[15px] w-[15px] me-2" /> Contact us</Link>

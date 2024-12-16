@@ -30,7 +30,7 @@ const Footer = () => {
                         </div>
                         <ul className="lg:col-span-4 list-none md:text-end text-center mt-6 md:mt-0">
                             <li className="inline mr-2">
-                                <Link href="http://facebook.com/" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white">
+                                <Link href="http://facebook.com/" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800  rounded-xl hover:border-orange-500  hover:bg-orange-500  text-slate-300 hover:text-white">
                                     {/* <i data-feather="shopping-cart" className="h-[14px] w-[14px] align-middle" title="Buy Now" /> */}
                                     <ImageWrapper
                                         src={FB_IMAGE}
@@ -40,7 +40,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className="inline mr-2">
-                                <Link href="http://linkedin.com/" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white">
+                                <Link href="http://linkedin.com/" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800  rounded-xl hover:border-orange-500  hover:bg-orange-500  text-slate-300 hover:text-white">
                                     <ImageWrapper
                                         src={LINKEDIN_IMAGE}
                                         alt={"linkedin logo"}
@@ -49,7 +49,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className="inline mr-2">
-                                <Link href="http://instagram.com/" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white">
+                                <Link href="http://instagram.com/" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800  rounded-xl hover:border-orange-500  hover:bg-orange-500  text-slate-300 hover:text-white">
                                     <ImageWrapper
                                         src={INSTA_IMAGE}
                                         alt={"instagram logo"}
@@ -58,7 +58,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className="inline mr-2">
-                                <Link href="https://www.github.com" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white">
+                                <Link href="https://www.github.com" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800  rounded-xl hover:border-orange-500  hover:bg-orange-500  text-slate-300 hover:text-white">
                                     <ImageWrapper
                                         src={GITHUB_IMAGE}
                                         alt={"github"}
@@ -67,7 +67,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className="inline mr-2">
-                                <Link href="https://www.gmail.com" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white">
+                                <Link href="https://www.gmail.com" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800  rounded-xl hover:border-orange-500  hover:bg-orange-500  text-slate-300 hover:text-white">
                                     <ImageWrapper
                                         src={MAIL_IMAGE}
                                         alt={"mail"}
@@ -76,7 +76,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             {/* <li className="inline">
-                                <a href="https://x.com/shreethemes" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white">
+                                <a href="https://x.com/shreethemes" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800  rounded-xl hover:border-orange-500  hover:bg-orange-500  text-slate-300 hover:text-white">
                                     <ImageWrapper
                                         src={LINKEDIN_IMAGE}
                                         alt={"linkedin logo"}
@@ -85,7 +85,7 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li className="inline">
-                                <a href="mailto:support@shreethemes.in" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white">
+                                <a href="mailto:support@shreethemes.in" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800  rounded-xl hover:border-orange-500  hover:bg-orange-500  text-slate-300 hover:text-white">
                                     <ImageWrapper
                                         src={LINKEDIN_IMAGE}
                                         alt={"linkedin logo"}
@@ -94,7 +94,7 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li className="inline">
-                                <a href="https://forms.gle/QkTueCikDGqJnbky9" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white">
+                                <a href="https://forms.gle/QkTueCikDGqJnbky9" target="_blank" className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800  rounded-xl hover:border-orange-500  hover:bg-orange-500  text-slate-300 hover:text-white">
                                     <ImageWrapper
                                         src={LINKEDIN_IMAGE}
                                         alt={"linkedin logo"}
